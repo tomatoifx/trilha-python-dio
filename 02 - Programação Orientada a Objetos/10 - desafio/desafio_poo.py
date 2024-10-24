@@ -313,26 +313,26 @@ def main():
     while True:
         opcao = menu()
 
-        if opcao == "d":
+        if opcao == "1":
             depositar(clientes)
 
-        elif opcao == "s":
+        elif opcao == "2":
             sacar(clientes)
 
-        elif opcao == "e":
+        elif opcao == "3":
             exibir_extrato(clientes)
 
-        elif opcao == "nu":
+        elif opcao == "6":
             criar_cliente(clientes)
 
-        elif opcao == "nc":
+        elif opcao == "4":
             numero_conta = len(contas) + 1
             criar_conta(numero_conta, clientes, contas)
 
-        elif opcao == "lc":
+        elif opcao == "5":
             listar_contas(contas)
 
-        elif opcao == "q":
+        elif opcao == "0":
             break
 
         else:
